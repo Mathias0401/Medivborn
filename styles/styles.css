@@ -21,19 +21,6 @@ body{
     font-size: 2.5rem;
 }
 
-p{
-    color: #00a700;
-    align-self: center;  
-    width: 80%;
-    border: 0.20rem dashed;
-    padding: 1.5rem;
-    word-spacing: 0.25rem;
-    text-align: center;
-    line-height: 1.5rem;
-    font-family: 'VT323', monospace;
-    font-size: 1.75rem;
-}
-
 .side-left,.side-right,.side-bottom{
     border: 0.20rem dashed #00a700;
 }
@@ -56,11 +43,67 @@ p{
     grid-row: 3/4;
     grid-column: 2/3;
     width: 99%;
-    height: 62.5%;
+    height: 10.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 0.25rem;
+}
+
+.prev-commands{
+    width: 98%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    overflow: hidden;
+}
+
+.prev-comm{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'VT323', monospace;
+    letter-spacing: 0.15rem;
+}
+
+form{
+    width: 99%;
+}
+
+#command-line{
+    width: 85%;
+    border: none;
+    background-color: #0F0E0E;
+    color: white;
+    font-size: 1.50rem;
+    font-family: 'VT323', monospace;
+    letter-spacing: 0.15rem;
+}
+
+#btnClear{
+    font-size: 1.5rem;
+    font-family: 'VT323', monospace;
+    letter-spacing: 0.15rem;
+    background-color: #0F0E0E;
+    color: white;
+    border: none;
+}
+
+.command-pre{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'VT323', monospace;
+    letter-spacing: 0.15rem;
+}
+
+#command-line:focus{
+    outline: none;
 }
 
 .cls-1, .cls-2 {
-    fill: #fff;
+    fill: #454545;
 }
 
 .cls-2 {
