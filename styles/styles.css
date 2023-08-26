@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0F0E0E;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 1fr max-content 2fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.title{
+    color: #00a700;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+}
+
+p{
+    color: #00a700;
+    align-self: center;  
+    width: 80%;
+    border: 0.20rem dashed;
+    padding: 1.5rem;
+    word-spacing: 0.25rem;
+    text-align: center;
+    line-height: 1.5rem;
+    font-family: 'VT323', monospace;
+    font-size: 1.75rem;
+}
+
+.side-left,.side-right,.side-bottom{
+    border: 0.20rem dashed #00a700;
+}
+
+.side-left{
+    grid-row: 1/4;
+    grid-column: 1/2;
+    width: 80%;
+    height: 90%;
+}
+
+.side-right{
+    grid-row: 1/4;
+    grid-column: 3/4;
+    width: 80%;
+    height: 90%;
+}
+
+.side-bottom{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    width: 99%;
+    height: 62.5%;
+}
+
+.cls-1, .cls-2 {
+    fill: #fff;
+}
+
+.cls-2 {
+    fill-rule: evenodd;
+}
+
+svg{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 50rem;
+    height: 30rem;
+    padding: 2rem 5rem;
+    border: 0.20rem dashed #00a700;
+}
+
+#C01:hover,#C02:hover,#C03:hover,#C04:hover,#C05:hover,#C06:hover{
+    stroke: #00a700;
+    fill: #00a700;
+}
